@@ -1,5 +1,6 @@
 # MaskTextView
-Use a user-defined TextView--->MaskTextView to achieve a ListView with gradient effect.<br> 用一个自定义的TextView--->MaskTextView去实现一个带渐变效果的ListView
+#### Use a user-defined TextView(MaskTextView) to achieve a ListView with gradient effect.<br> 
+#### 用一个自定义的TextView(MaskTextView)去实现一个带渐变效果的ListView ##
 
 ## Introduce ##
 **Actually,this *GradientListView* is made by a user-defined *TextView* with MaskEffect,Through the text set to transparent and set the gradient background resource,then you get it. The text color is the background's color**
@@ -11,7 +12,7 @@ Use a user-defined TextView--->MaskTextView to achieve a ListView with gradient 
 
 ## Attentions ##
 <br>
-**1、The Class ‘MyTextView’ (A user-defined TextView).**
+**1、The Class ‘MaskTextView’ (A user-defined TextView).**
 
     lineNumber 56:c.drawColor(Color.argb(255, 50, 50, 50)); 
 You can change the color you need，ensure the Alpha value is 255 so the text's surrounding is not transparent.
@@ -21,7 +22,7 @@ You can change the color you need，ensure the Alpha value is 255 so the text's 
 您可以根据自己的需要进行调节颜色，但是Alpha值应该为255保证其不透明)
 
 <br>
-**2、The Class ‘MyTextView’**
+**2、The Class ‘MaskTextView’**
 
     lineNumber 57:c.drawText(getText().toString(), 50, 80, mTextPaint);
 You can change the text's position by need.
@@ -29,9 +30,9 @@ You can change the text's position by need.
 (译：类MyTextView 57行c.drawText(getText().toString(),50,80, mTextPaint); 调节文字的位置，根据需要自行调节)
 
    <br>
-**3、In the item's xml_layout,Replace the TextView to MyTextView；**
+**3、In the item's xml_layout,Replace the TextView to MaskTextView；**
 
-(译：在ListView的条目布局中，把TextView替换为MyTextView）
+(译：在ListView的条目布局中，把TextView替换为MaskTextView）
 <br>
 
 **4、Set the background resources for the gradient background you want，You can display background with a FrameLayout.**
